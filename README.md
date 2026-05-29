@@ -1,6 +1,7 @@
 # Pandas Training
 
 This repository contains my Pandas training notes exported as HTML files.
+[view using github pages: ](https://jablonsky.github.io/pandas_training/index.html)
 
 These pages are useful as quick reference notes while learning data analysis with Python and Pandas.
 
