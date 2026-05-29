@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pandas Training Notes</title>
+
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --card: #ffffff;
+      --text: #1f2328;
+      --muted: #656d76;
+      --border: #d0d7de;
+      --accent: #0969da;
+      --accent-dark: #0550ae;
+      --code-bg: #afb8c133;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d1117, #24292f);
+      color: white;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin: 12px auto 0;
+      max-width: 760px;
+      color: #d8dee4;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 32px auto;
+      padding: 0 20px 40px;
+    }
+
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 2px rgba(27, 31, 36, 0.06);
+    }
+
+    .intro h2 {
+      margin-top: 0;
+    }
+
+    .lesson-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .lesson-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 1px 2px rgba(27, 31, 36, 0.06);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .lesson-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(27, 31, 36, 0.12);
+    }
+
+    .lesson-number {
+      display: inline-block;
+      background: var(--code-bg);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .lesson-card h3 {
+      margin: 4px 0 10px;
+      font-size: 1.15rem;
+    }
+
+    .lesson-card p {
+      color: var(--muted);
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+    }
+
+    a.button {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: white;
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    a.button:hover {
+      background: var(--accent-dark);
+    }
+
+    .note {
+      margin-top: 30px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      background: var(--card);
+      border-radius: 8px;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding: 24px 20px;
+      font-size: 0.9rem;
+    }
+
+    code {
+      background: var(--code-bg);
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pandas Training Notes</h1>
+    <p>
+      A small collection of Pandas learning pages exported from Jupyter Notebook.
+      Use these pages as quick reference notes while practising Python data analysis.
+    </p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Lessons</h2>
+      <p>
+        Select a lesson below to open the exported HTML page.
+        These notes cover common Pandas operations used in everyday data analysis work.
+      </p>
+
+      <div class="lesson-grid">
+
+        <article class="lesson-card">
+          <span class="lesson-number">1-06</span>
+          <h3>Filtering DataFrames</h3>
+          <p>Filtering rows and selecting data based on conditions.</p>
+          <a class="button" href="./1-06%20Filtering%20DataFrame.html">Open lesson</a>
+        </article>
+
+        <article class="lesson-card">
+          <span class="lesson-number">1-07</span>
+          <h3>Sorting, Counting, Unique Values and Duplicates</h3>
+          <p>Sorting data, counting values, finding unique records, and handling duplicated rows.</p>
+          <a class="button" href="./1-07%20Sorting%20Counting%20Uniquing%20Duplication.html">Open lesson</a>
+        </article>
+
+        <article class="lesson-card">
+          <span class="lesson-number">1-08</span>
+          <h3>Missing Values</h3>
+          <p>Finding, understanding, and handling missing data in Pandas.</p>
+          <a class="button" href="./1-08%20Missing%20Values.html">Open lesson</a>
+        </article>
+
+        <article class="lesson-card">
+          <span class="lesson-number">1-09</span>
+          <h3>Aggregation</h3>
+          <p>Summarising datasets using aggregation methods.</p>
+          <a class="button" href="./1-09%20aggregation.html">Open lesson</a>
+        </article>
+
+        <article class="lesson-card">
+          <span class="lesson-number">2-13</span>
+          <h3>Groupby Operations</h3>
+          <p>Grouping data and applying summary calculations to groups.</p>
+          <a class="button" href="./2-13%20Groupby%20Operations.html">Open lesson</a>
+        </article>
+
+        <article class="lesson-card">
+          <span class="lesson-number">2-17</span>
+          <h3>Combining Datasets</h3>
+          <p>Joining, merging, and combining datasets in Pandas.</p>
+          <a class="button" href="./2-17-Combining_Datasets.html">Open lesson</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="note">
+      <strong>Note:</strong>
+      If any link does not open, check that the filename in GitHub is exactly the same as the
+      filename used inside the <code>href</code> link. GitHub Pages is strict with spaces,
+      capital letters, hyphens, and underscores.
+    </section>
+  </main>
+
+  <footer>
+    Created for the <strong>pandas_training</strong> repository.
+  </footer>
+</body>
+</html>
